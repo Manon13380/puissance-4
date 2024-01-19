@@ -1,0 +1,140 @@
+@font-face {
+    font-family: moccha;
+    src: url(../font/MochaFrappuccino-Bold.ttf);
+}
+
+body {
+    font-family: moccha;
+    background-image: url(../images/anime-7822082_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 15%;
+    -webkit-text-stroke: 1px rgb(127, 128, 129);
+}
+
+header {
+    text-align: center;
+    font-size: 35px;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.178);
+    margin: 0 200px 0 200px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+
+}
+#twoPlayers,
+#vsBot {
+    display: none;
+}
+#restart {
+    display: none;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.game {
+    height: 550px;
+    width: 500px;
+    background-color: rgba(240, 248, 255, 0.178);
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game p {
+    display: none;
+    margin: 0;
+    font-size: 50px;
+    color: rgb(110, 178, 237);
+}
+.button {
+    font-family: moccha;
+    font-size: 30px;
+    display: block;
+    background-color: transparent;
+    padding:10px;
+    border-radius: 25px;
+    border: 1px solid rgba(240, 248, 255, 0.419);
+    color: rgb(187, 213, 236);
+    cursor: pointer;
+}
+
+.cell {
+    display: flex;
+    border: 2px solid rgb(1, 78, 146);
+    background-color: rgb(1, 73, 136);
+    border-collapse: collapse;
+    height: 60px;
+    width: 60px;
+    line-height: 150px;
+}
+
+
+.gameContainer {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+footer img {
+    height: 60px;
+    width: 60px;
+}
+footer p {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+@media (max-width: 714px) {
+    h1 {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 671px) {
+    .cell {
+        height: 55px;
+        width: 55px;
+    }
+    .game p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 649px) {
+  header{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+    .cell {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media (max-width: 350px) {
+    .cell {
+        height: 40px;
+        width: 40px;
+    }
+}
